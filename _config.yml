@@ -1,6 +1,6 @@
-resume_url: "Resume.pdf"
-author_name: "John Doe"
-url: johndoe.com
+#resume_url: "Resume.pdf"
+author_name: "zhao zi"
+#url: johndoe.com
 
 plugins:
   - jekyll-seo-tag
@@ -154,3 +154,13 @@ disqus:
   # Leave shortname blank to disable comments site-wide.
   # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
   shortname: my_disqus_shortname
+
+#Valine Comments 
+  valine_comment:
+  enable: true
+# app_id
+  leancloud_appid: fJ3yloXpb6au9xpNWMNvRYFW-gzGzoHsz
+# app_key
+  leancloud_appkey: wyY6zypbVbqopyxzSnkG1eSM
+# placeholde
+  placeholder: “Just go go"

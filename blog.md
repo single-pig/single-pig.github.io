@@ -1,7 +1,7 @@
 ---
 layout: blog
 permalink: /blog/
-title: Rohit Jain | Blog
+title: Zhai zi | Blog
 pagination:
   enabled: true
 ---
