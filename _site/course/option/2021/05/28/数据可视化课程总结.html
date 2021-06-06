@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="dns-prefetch" href="https://my_disqus_shortname.disqus.com">
+    <meta
+    itemprop="description"
+    name="description"
+    content="
+        
+            
+        "
+    />
+    <title>
+      
+          数据可视化课程内容总结
+      
+    </title>
+    <!-- async load css file -->
+    <link rel="stylesheet" href="/assets/css/styles.css" media="none" onload="if(media!='all')media='all'">
+    <!-- Load css when script is disabled -->
+    <noscript><link rel="stylesheet" href="/assets/css/styles.css"></noscript>
+
+    <!-- Dns Prefetch the google analytics -->
+    <link rel="dns-prefetch" href="www.googletagmanager.com">
+    <link rel="dns-prefetch" href="www.google-analytics.com">
+
+
+
+    <!-- Load the script async and wait for the page to render for script to execute -->
+    <script defer src="/assets/js/theme.js"></script>
+    <script defer src="/assets/js/script.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA_123456789_1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA_123456789_1');
+</script>
+
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" />
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>数据可视化课程内容总结</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="数据可视化课程内容总结" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="本文内容是根据中国大学慕课上的数据可视化总结 课程内容从直方图，svg中的二叉树，文字树再到D3中的直方图与饼图，力导向图，最后链接数据库，并将实现前后端分离。 以下是课程目录。本文主要总结一下前面基础部分。" />
+<meta property="og:description" content="本文内容是根据中国大学慕课上的数据可视化总结 课程内容从直方图，svg中的二叉树，文字树再到D3中的直方图与饼图，力导向图，最后链接数据库，并将实现前后端分离。 以下是课程目录。本文主要总结一下前面基础部分。" />
+<link rel="canonical" href="http://localhost:4000/course/option/2021/05/28/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E8%AF%BE%E7%A8%8B%E6%80%BB%E7%BB%93.html" />
+<meta property="og:url" content="http://localhost:4000/course/option/2021/05/28/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E8%AF%BE%E7%A8%8B%E6%80%BB%E7%BB%93.html" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-05-28T00:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="数据可视化课程内容总结" />
+<script type="application/ld+json">
+{"headline":"数据可视化课程内容总结","description":"本文内容是根据中国大学慕课上的数据可视化总结 课程内容从直方图，svg中的二叉树，文字树再到D3中的直方图与饼图，力导向图，最后链接数据库，并将实现前后端分离。 以下是课程目录。本文主要总结一下前面基础部分。","datePublished":"2021-05-28T00:00:00+08:00","dateModified":"2021-05-28T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/course/option/2021/05/28/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E8%AF%BE%E7%A8%8B%E6%80%BB%E7%BB%93.html"},"url":"http://localhost:4000/course/option/2021/05/28/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E8%AF%BE%E7%A8%8B%E6%80%BB%E7%BB%93.html","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  </head>
+    <body onload="onLoad()">
+      <select id='themeSelector' onchange="toggleTheme()" aria-label="Select theme">
+</select>
+
+      <div class="mid-section-cover">
+    <nav>
+        <h1>zhao zi</h1>
+        <ul>
+      <li>
+        <a href = "/">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href = "/about/">
+          About
+        </a>
+      </li>
+      <li>
+        <a href = "/blog/">
+          Blog
+        </a>
+      </li>
+      <li>
+        <a href = "/thoughts/">
+          Thoughts
+        </a>
+      </li>
+</ul>
+    </nav>
+    <main class="sub-mid-section-cover">
+        <h2>数据可视化课程内容总结</h2>
+<small></small>
+<p>本文内容是根据中国大学慕课上的<a href="https://www.icourse163.org/course/CUC-1206407806">数据可视化</a>总结
+课程内容从直方图，svg中的二叉树，文字树再到D3中的直方图与饼图，力导向图，最后链接数据库，并将实现前后端分离。
+以下是课程目录。本文主要总结一下前面基础部分。</p>
+
+<p><img src="https://img-blog.csdnimg.cn/20210527174401951.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA2MTE3MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
+<h3 id="js可视化">JS可视化</h3>
+<h4 id="1直方图">1.直方图</h4>
+<p>爬取了豆瓣电影前250榜单的信息，建立了数组，通过for循环批量创建rectangle，text，同时认识到矩形的坐标是从左上角开始的。
+<img src="https://img-blog.csdnimg.cn/20210527181456429.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA2MTE3MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
+<h4 id="2-随机二叉树">2. 随机二叉树</h4>
+<p>学习了随机的应用，以及函数的定义
+<img src="https://img-blog.csdnimg.cn/20210528013901234.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA2MTE3MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">var</span> <span class="n">mysvg</span> <span class="o">=</span> <span class="n">document</span><span class="p">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s">"wcSvg"</span><span class="p">);</span>
+<span class="n">mysvg</span><span class="p">.</span><span class="n">setAttribute</span><span class="p">(</span><span class="s">"width"</span><span class="p">,</span><span class="n">w</span><span class="o">*</span><span class="mi">0</span><span class="p">.</span><span class="mi">9</span><span class="p">);</span>
+<span class="n">mysvg</span><span class="p">.</span><span class="n">setAttribute</span><span class="p">(</span><span class="s">"height"</span><span class="p">,</span><span class="n">h</span><span class="o">*</span><span class="mi">0</span><span class="p">.</span><span class="mi">9</span><span class="p">);</span>
+<span class="n">var</span> <span class="n">length</span><span class="o">=</span><span class="mi">250</span><span class="p">;</span>
+<span class="n">rate</span><span class="o">=</span><span class="mi">0</span><span class="p">.</span><span class="mi">9</span><span class="p">;</span>
+<span class="n">var</span> <span class="n">x0</span><span class="o">=</span><span class="n">w</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span>
+<span class="n">var</span> <span class="n">y0</span><span class="o">=</span><span class="n">h</span><span class="p">;</span>
+<span class="n">var</span> <span class="n">count</span><span class="o">=</span><span class="mi">8</span>
+<span class="n">function</span> <span class="nf">show</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span><span class="n">y0</span><span class="p">,</span><span class="n">length</span><span class="p">,</span><span class="n">rate</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">count</span><span class="p">){</span>
+		<span class="n">var</span> <span class="n">x1</span><span class="o">=</span><span class="n">x0</span><span class="p">;</span>
+		<span class="n">var</span> <span class="n">y1</span><span class="o">=</span><span class="n">y0</span><span class="p">;</span>
+		<span class="n">var</span> <span class="n">x2</span><span class="o">=</span><span class="n">x1</span><span class="o">+</span><span class="n">length</span><span class="o">*</span><span class="n">Math</span><span class="p">.</span><span class="n">cos</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
+		<span class="n">var</span> <span class="n">y2</span><span class="o">=</span><span class="n">y1</span><span class="o">+</span><span class="n">length</span><span class="o">*</span><span class="n">Math</span><span class="p">.</span><span class="n">sin</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
+		<span class="n">length</span><span class="o">=</span><span class="n">length</span><span class="o">*</span><span class="n">rate</span><span class="o">*</span><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">5</span><span class="o">+</span><span class="n">Math</span><span class="p">.</span><span class="n">random</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+		<span class="n">svgline</span><span class="o">=</span> <span class="n">document</span><span class="p">.</span><span class="n">createElement</span><span class="p">(</span><span class="s">"line"</span><span class="p">);</span>
+		<span class="n">mysvg</span><span class="p">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">svgline</span><span class="p">);</span>
+		<span class="n">var</span> <span class="n">lineWidth</span><span class="o">=</span><span class="p">(</span><span class="n">count</span><span class="o">*</span><span class="mi">0</span><span class="p">.</span><span class="mi">8</span><span class="o">+</span><span class="n">Math</span><span class="p">.</span><span class="n">random</span><span class="p">()</span><span class="o">*</span><span class="mi">0</span><span class="p">.</span><span class="mi">5</span><span class="p">)</span><span class="o">*</span><span class="mi">0</span><span class="p">.</span><span class="mi">7</span><span class="p">;</span>
+		<span class="n">svgline</span><span class="p">.</span><span class="n">outerHTML</span><span class="o">=</span><span class="s">"&lt;line x1="</span><span class="o">+</span><span class="n">x1</span><span class="o">+</span><span class="s">" y1="</span><span class="o">+</span><span class="n">y1</span><span class="o">+</span><span class="s">" x2="</span><span class="o">+</span><span class="n">x2</span><span class="o">+</span><span class="s">" y2="</span><span class="o">+</span><span class="n">y2</span><span class="o">+</span><span class="s">" style='stroke:rgb("</span><span class="o">+</span><span class="p">(</span><span class="mi">100</span><span class="o">+</span><span class="n">count</span><span class="p">)</span><span class="o">+</span><span class="s">","</span><span class="o">+</span><span class="p">(</span><span class="mi">100</span><span class="o">+</span><span class="n">count</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span><span class="o">+</span><span class="s">","</span><span class="o">+</span><span class="p">(</span><span class="mi">150</span><span class="o">+</span><span class="n">count</span><span class="p">)</span><span class="o">+</span><span class="s">");stroke-width:"</span><span class="o">+</span><span class="p">(</span><span class="n">lineWidth</span><span class="p">)</span><span class="o">+</span><span class="s">"' /&gt;"</span><span class="p">;</span>
+		<span class="cp">#分两侧同时进行，并递归的创建枝条
+</span>		<span class="n">var</span> <span class="n">aL</span><span class="o">=</span><span class="n">a</span><span class="o">-</span><span class="n">Math</span><span class="p">.</span><span class="n">PI</span><span class="o">/</span><span class="mi">4</span><span class="o">*</span><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">5</span><span class="o">+</span><span class="n">Math</span><span class="p">.</span><span class="n">random</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="mi">0</span><span class="p">.</span><span class="mi">8</span><span class="p">;</span>
+		<span class="n">var</span> <span class="n">aR</span><span class="o">=</span><span class="n">a</span><span class="o">+</span><span class="n">Math</span><span class="p">.</span><span class="n">PI</span><span class="o">/</span><span class="mi">4</span><span class="o">*</span><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">5</span><span class="o">+</span><span class="n">Math</span><span class="p">.</span><span class="n">random</span><span class="p">()</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="mi">0</span><span class="p">.</span><span class="mi">5</span><span class="p">;</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">count</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">){</span>
+		<span class="n">show</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span><span class="n">y2</span><span class="p">,</span><span class="n">length</span><span class="p">,</span><span class="n">rate</span><span class="p">,</span><span class="n">aL</span><span class="p">,</span><span class="n">count</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+		<span class="n">show</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span><span class="n">y2</span><span class="p">,</span><span class="n">length</span><span class="p">,</span><span class="n">rate</span><span class="p">,</span><span class="n">aR</span><span class="p">,</span><span class="n">count</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+		<span class="p">}</span>
+<span class="p">}</span>
+<span class="n">show</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span><span class="n">y0</span><span class="p">,</span><span class="n">length</span><span class="p">,</span><span class="n">rate</span><span class="p">,</span><span class="o">-</span><span class="n">Math</span><span class="p">.</span><span class="n">PI</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">count</span><span class="p">);</span>
+</code></pre></div></div>
+<h4 id="3文字树">3.文字树</h4>
+<p>结合了圆、文本、矩形、随机二叉树的一个实验，同时熟悉了定义不同颜色、线条、字体的方法。
+<img src="https://img-blog.csdnimg.cn/20210528014759277.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA2MTE3MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">var</span> <span class="n">mysvg</span> <span class="o">=</span> <span class="n">document</span><span class="p">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s">"mySvg"</span><span class="p">);</span>
+<span class="n">mysvg</span><span class="p">.</span><span class="n">setAttribute</span><span class="p">(</span><span class="s">"width"</span><span class="p">,</span><span class="n">w</span><span class="o">*</span><span class="mi">0</span><span class="p">.</span><span class="mi">9</span><span class="p">);</span>
+<span class="n">mysvg</span><span class="p">.</span><span class="n">setAttribute</span><span class="p">(</span><span class="s">"height"</span><span class="p">,</span><span class="n">h</span><span class="o">*</span><span class="mi">0</span><span class="p">.</span><span class="mi">9</span><span class="p">);</span>
+<span class="n">var</span> <span class="n">str</span><span class="o">=</span><span class="s">"新年快乐"</span><span class="p">;</span>
+<span class="n">var</span> <span class="n">str2</span><span class="o">=</span><span class="s">"万事如意"</span>
+<span class="n">var</span> <span class="n">str3</span><span class="o">=</span><span class="s">"欢天喜地度佳节"</span>
+<span class="n">var</span> <span class="n">str4</span><span class="o">=</span><span class="s">"张灯结彩迎新春"</span>
+<span class="c1">//var fontsize=40</span>
+<span class="c1">//var length=str.length*fontsize;</span>
+<span class="n">rate</span><span class="o">=</span><span class="mi">0</span><span class="p">.</span><span class="mi">6</span>
+<span class="n">var</span> <span class="n">x0</span><span class="o">=</span><span class="n">w</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span>
+<span class="n">var</span> <span class="n">y0</span><span class="o">=</span><span class="n">h</span><span class="o">-</span><span class="mi">100</span><span class="p">;</span>
+<span class="n">var</span> <span class="n">count</span><span class="o">=</span><span class="mi">7</span><span class="p">;</span>
+<span class="n">function</span> <span class="nf">show</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span><span class="n">y0</span><span class="p">,</span><span class="n">length</span><span class="p">,</span><span class="n">rate</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">count</span><span class="p">,</span><span class="n">str</span><span class="p">){</span>
+	<span class="n">var</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">count</span><span class="o">*</span><span class="mi">5</span>
+	<span class="n">var</span> <span class="n">L</span><span class="o">=</span><span class="n">str</span><span class="p">.</span><span class="n">length</span><span class="o">*</span><span class="n">fontsize</span>
+	<span class="n">var</span> <span class="n">x1</span><span class="o">=</span><span class="n">x0</span><span class="p">;</span>
+	<span class="n">var</span> <span class="n">y1</span><span class="o">=</span><span class="n">y0</span><span class="p">;</span>
+	<span class="n">var</span> <span class="n">x2</span><span class="o">=</span><span class="n">x1</span><span class="o">+</span><span class="p">(</span><span class="n">L</span><span class="o">+</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="n">Math</span><span class="p">.</span><span class="n">cos</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
+	<span class="n">var</span> <span class="n">y2</span><span class="o">=</span><span class="n">y1</span><span class="o">+</span><span class="p">(</span><span class="n">L</span><span class="o">+</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="n">Math</span><span class="p">.</span><span class="n">sin</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
+	<span class="c1">//svgline= document.createElement("line");</span>
+	<span class="c1">//mysvg.appendChild(svgline);</span>
+	<span class="c1">//svgline.outerHTML="&lt;line x1="+x1+" y1="+y1+" x2="+x2+" y2="+y2+" style='stroke:rgb(99,99,99);stroke-width:2' /&gt;";</span>
+	<span class="n">var</span> <span class="n">aL</span><span class="o">=</span><span class="n">a</span><span class="o">-</span><span class="n">Math</span><span class="p">.</span><span class="n">PI</span><span class="o">/</span><span class="mi">6</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">0</span><span class="p">.</span><span class="mi">5</span><span class="o">*</span><span class="n">Math</span><span class="p">.</span><span class="n">random</span><span class="p">());</span>
+	<span class="n">var</span> <span class="n">aR</span><span class="o">=</span><span class="n">a</span><span class="o">+</span><span class="n">Math</span><span class="p">.</span><span class="n">PI</span><span class="o">/</span><span class="mi">6</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">0</span><span class="p">.</span><span class="mi">5</span><span class="o">*</span><span class="n">Math</span><span class="p">.</span><span class="n">random</span><span class="p">());</span>
+	<span class="n">var</span> <span class="n">words</span><span class="o">=</span> <span class="n">document</span><span class="p">.</span><span class="n">createElement</span><span class="p">(</span><span class="s">"text"</span><span class="p">);</span>
+	<span class="n">mysvg</span><span class="p">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">words</span><span class="p">);</span>
+	<span class="n">words</span><span class="p">.</span><span class="n">outerHTML</span><span class="o">=</span><span class="s">"&lt;text x="</span><span class="o">+</span><span class="n">x1</span><span class="o">+</span><span class="s">" y="</span><span class="o">+</span><span class="n">y1</span><span class="o">+</span><span class="s">" transform='rotate("</span><span class="o">+</span><span class="n">a</span><span class="o">*</span><span class="mi">180</span><span class="o">/</span><span class="n">Math</span><span class="p">.</span><span class="n">PI</span><span class="o">+</span><span class="s">","</span><span class="o">+</span><span class="n">x1</span><span class="o">+</span><span class="s">","</span><span class="o">+</span><span class="n">y1</span><span class="o">+</span><span class="s">")' fill='rgb("</span><span class="o">+</span><span class="mi">100</span><span class="o">*</span><span class="n">Math</span><span class="p">.</span><span class="n">random</span><span class="p">()</span><span class="o">+</span><span class="s">","</span><span class="o">+</span><span class="mi">100</span><span class="o">*</span><span class="n">Math</span><span class="p">.</span><span class="n">random</span><span class="p">()</span><span class="o">+</span><span class="s">","</span><span class="o">+</span><span class="mi">50</span><span class="o">*</span><span class="n">Math</span><span class="p">.</span><span class="n">random</span><span class="p">()</span><span class="o">+</span><span class="s">")' font-size="</span><span class="o">+</span><span class="n">fontsize</span><span class="o">+</span><span class="s">"&gt;"</span><span class="o">+</span><span class="n">str</span><span class="o">+</span><span class="s">"&lt;/text&gt;"</span><span class="p">;</span>
+	<span class="k">if</span><span class="p">(</span><span class="n">count</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">){</span>
+		<span class="n">show</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span><span class="n">y2</span><span class="p">,</span><span class="n">L</span><span class="p">,</span><span class="n">rate</span><span class="p">,</span><span class="n">aL</span><span class="p">,</span><span class="n">count</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">str</span><span class="p">);</span>
+		<span class="n">show</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span><span class="n">y2</span><span class="p">,</span><span class="n">L</span><span class="p">,</span><span class="n">rate</span><span class="p">,</span><span class="n">aR</span><span class="p">,</span><span class="n">count</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">str2</span><span class="p">);</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">count</span><span class="o">==</span><span class="mi">1</span><span class="o">||</span><span class="n">count</span><span class="o">==</span><span class="mi">4</span><span class="p">)</span>
+		<span class="p">{</span><span class="n">var</span> <span class="n">myCircle</span><span class="o">=</span><span class="n">document</span><span class="p">.</span><span class="n">createElement</span><span class="p">(</span><span class="s">"circle"</span><span class="p">);</span>
+		<span class="n">mysvg</span><span class="p">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">myCircle</span><span class="p">);</span>
+		<span class="n">myCircle</span><span class="p">.</span><span class="n">outerHTML</span><span class="o">=</span><span class="s">"&lt;circle cx="</span><span class="o">+</span><span class="n">x1</span><span class="o">+</span><span class="s">" cy="</span><span class="o">+</span><span class="n">y1</span><span class="o">+</span><span class="s">" r="</span><span class="o">+</span><span class="p">(</span><span class="mi">10</span><span class="o">*</span><span class="n">Math</span><span class="p">.</span><span class="n">random</span><span class="p">())</span><span class="o">+</span><span class="s">" fill='red'/&gt;"</span>
+		<span class="p">}</span>
+		<span class="cp">#左边定义下联
+</span>		<span class="k">if</span> <span class="p">(</span><span class="n">count</span><span class="o">==</span><span class="mi">5</span><span class="o">&amp;&amp;</span><span class="n">x1</span><span class="o">&lt;=</span><span class="mi">600</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="n">var</span> <span class="n">Circle1</span><span class="o">=</span><span class="n">document</span><span class="p">.</span><span class="n">createElement</span><span class="p">(</span><span class="s">"circle"</span><span class="p">);</span>
+			<span class="n">mysvg</span><span class="p">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">Circle1</span><span class="p">);</span>
+			<span class="n">Circle1</span><span class="p">.</span><span class="n">outerHTML</span><span class="o">=</span><span class="s">"&lt;circle cx="</span><span class="o">+</span><span class="p">(</span><span class="n">x1</span><span class="o">-</span><span class="mi">5</span><span class="p">)</span><span class="o">+</span><span class="s">" cy="</span><span class="o">+</span><span class="p">(</span><span class="n">y1</span><span class="o">+</span><span class="mi">20</span><span class="p">)</span><span class="o">+</span><span class="s">" r=7 stroke='rgb(255,255,0)'fill='white' stroke-width=3px /&gt;"</span>
+			<span class="n">var</span> <span class="n">rec1</span><span class="o">=</span><span class="n">document</span><span class="p">.</span><span class="n">createElement</span><span class="p">(</span><span class="s">"rect"</span><span class="p">);</span>
+			<span class="n">mysvg</span><span class="p">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">rec1</span><span class="p">);</span>
+			<span class="n">rec1</span><span class="p">.</span><span class="n">outerHTML</span><span class="o">=</span><span class="s">"&lt;rect x="</span><span class="o">+</span><span class="p">(</span><span class="n">x1</span><span class="o">-</span><span class="mi">23</span><span class="p">)</span><span class="o">+</span><span class="s">" y="</span><span class="o">+</span><span class="p">(</span><span class="n">y1</span><span class="o">+</span><span class="mi">30</span><span class="p">)</span><span class="o">+</span><span class="s">" width=35 height="</span><span class="o">+</span><span class="n">str3</span><span class="p">.</span><span class="n">length</span><span class="o">*</span><span class="mi">22</span><span class="o">+</span><span class="s">" fill='rgba(245,10,10,0.8)'&gt;"</span>
+			<span class="n">var</span> <span class="n">words2</span><span class="o">=</span> <span class="n">document</span><span class="p">.</span><span class="n">createElement</span><span class="p">(</span><span class="s">"text"</span><span class="p">);</span>
+			<span class="n">mysvg</span><span class="p">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">words2</span><span class="p">);</span>
+			<span class="n">words2</span><span class="p">.</span><span class="n">outerHTML</span><span class="o">=</span><span class="s">"&lt;text x="</span><span class="o">+</span><span class="p">(</span><span class="n">x1</span><span class="o">-</span><span class="mi">5</span><span class="p">)</span><span class="o">+</span><span class="s">" y="</span><span class="o">+</span><span class="p">(</span><span class="n">y1</span><span class="o">+</span><span class="mi">45</span><span class="p">)</span><span class="o">+</span><span class="s">" rotate=-90 transform='rotate(90,"</span><span class="o">+</span><span class="p">(</span><span class="n">x1</span><span class="o">-</span><span class="mi">15</span><span class="p">)</span><span class="o">+</span><span class="s">","</span><span class="o">+</span><span class="p">(</span><span class="n">y1</span><span class="o">+</span><span class="mi">45</span><span class="p">)</span><span class="o">+</span><span class="s">")' fill='black' font-size=20&gt;"</span><span class="o">+</span><span class="n">str3</span><span class="o">+</span><span class="s">"&lt;/text&gt;"</span><span class="p">;</span>
+			
+		<span class="p">}</span>
+		<span class="cp">#右边定义上联
+</span>		<span class="k">if</span> <span class="p">(</span><span class="n">count</span><span class="o">==</span><span class="mi">5</span><span class="o">&amp;&amp;</span><span class="n">x1</span><span class="o">&gt;=</span><span class="mi">600</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="n">var</span> <span class="n">Circle2</span><span class="o">=</span><span class="n">document</span><span class="p">.</span><span class="n">createElement</span><span class="p">(</span><span class="s">"circle"</span><span class="p">);</span>
+			<span class="n">mysvg</span><span class="p">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">Circle2</span><span class="p">);</span>
+			<span class="n">Circle2</span><span class="p">.</span><span class="n">outerHTML</span><span class="o">=</span><span class="s">"&lt;circle cx="</span><span class="o">+</span><span class="p">(</span><span class="n">x1</span><span class="o">-</span><span class="mi">5</span><span class="p">)</span><span class="o">+</span><span class="s">" cy="</span><span class="o">+</span><span class="p">(</span><span class="n">y1</span><span class="o">+</span><span class="mi">20</span><span class="p">)</span><span class="o">+</span><span class="s">" r=7 stroke='rgb(255,255,0)'fill='white' stroke-width=3px /&gt;"</span>
+			<span class="n">var</span> <span class="n">rec2</span><span class="o">=</span><span class="n">document</span><span class="p">.</span><span class="n">createElement</span><span class="p">(</span><span class="s">"rect"</span><span class="p">);</span>
+			<span class="n">mysvg</span><span class="p">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">rec2</span><span class="p">);</span>
+			<span class="n">rec2</span><span class="p">.</span><span class="n">outerHTML</span><span class="o">=</span><span class="s">"&lt;rect x="</span><span class="o">+</span><span class="p">(</span><span class="n">x1</span><span class="o">-</span><span class="mi">23</span><span class="p">)</span><span class="o">+</span><span class="s">" y="</span><span class="o">+</span><span class="p">(</span><span class="n">y1</span><span class="o">+</span><span class="mi">30</span><span class="p">)</span><span class="o">+</span><span class="s">" width=35 height="</span><span class="o">+</span><span class="n">str3</span><span class="p">.</span><span class="n">length</span><span class="o">*</span><span class="mi">22</span><span class="o">+</span><span class="s">" fill='rgba(245,10,10,0.8)'&gt;"</span>
+			<span class="n">var</span> <span class="n">words2</span><span class="o">=</span> <span class="n">document</span><span class="p">.</span><span class="n">createElement</span><span class="p">(</span><span class="s">"text"</span><span class="p">);</span>
+			<span class="n">var</span> <span class="n">words3</span><span class="o">=</span> <span class="n">document</span><span class="p">.</span><span class="n">createElement</span><span class="p">(</span><span class="s">"text"</span><span class="p">);</span>
+			<span class="n">mysvg</span><span class="p">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">words3</span><span class="p">);</span>
+			<span class="n">words3</span><span class="p">.</span><span class="n">outerHTML</span><span class="o">=</span><span class="s">"&lt;text x="</span><span class="o">+</span><span class="p">(</span><span class="n">x1</span><span class="o">-</span><span class="mi">13</span><span class="p">)</span><span class="o">+</span><span class="s">" y="</span><span class="o">+</span><span class="p">(</span><span class="n">y1</span><span class="o">+</span><span class="mi">50</span><span class="p">)</span><span class="o">+</span><span class="s">" rotate=-90 transform='rotate(90,"</span><span class="o">+</span><span class="p">(</span><span class="n">x1</span><span class="o">-</span><span class="mi">13</span><span class="p">)</span><span class="o">+</span><span class="s">","</span><span class="o">+</span><span class="p">(</span><span class="n">y1</span><span class="o">+</span><span class="mi">50</span><span class="p">)</span><span class="o">+</span><span class="s">")' fill='black' font-size=20&gt;"</span><span class="o">+</span><span class="n">str4</span><span class="o">+</span><span class="s">"&lt;/text&gt;"</span><span class="p">;</span>
+			
+		<span class="p">}</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+
+<span class="n">show</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span><span class="n">y0</span><span class="p">,</span><span class="n">length</span><span class="p">,</span><span class="n">rate</span><span class="p">,</span><span class="o">-</span><span class="n">Math</span><span class="p">.</span><span class="n">PI</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">count</span><span class="p">,</span><span class="n">str</span><span class="p">);</span>
+</code></pre></div></div>
+<p>数据要求有三个原则：</p>
+
+<p>1-最新。近期数据。或者实时数据。</p>
+
+<p>2-完整。整年的数据。连续N年的数据。</p>
+
+<p>3-权威。国家权威官方数据，国家统计局数据、重要学术机构数据，部委数据、国内外知名咨询公司数据，重要文献数据等。</p>
+<h3 id="d3可视化">D3可视化</h3>
+<p>D3是JS的一个可视化的库，使用之前要先提前下载好相应版本的文档，下图所示是v3和v6版本的。min.js是压缩过的js，它体积更小，传输效率更快。
+<img src="https://img-blog.csdnimg.cn/20210528022042590.png" alt="在这里插入图片描述" /></p>
+
+<blockquote>
+  <p>.js文件：
+  优点： 可读性较好，易于debug和更改.
+  缺点：体积较大，传输时间长
+  .min.js文件：
+  优点：体积较小传输快, 源码防窃
+  缺点：可读性差</p>
+</blockquote>
+
+<p>在开始D3之前，我们有必要回顾一下D3这个库的特点。作为目前最流行的Web可视化库D3.JS，D3.JS本身是JavaScript代码实现的可视化API，它不是一种语言，可是封装的比较高级，因此初学者感觉门槛小高。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>D3的特点如下（三大坑）：
+
+1-批量数据绑定。有多少数据，绘制多少图形元素，一句话代替了一个循环。所以人家自称是Data Driven Document吗。
+
+2-布局和绘制分开。布局是计算，绘制才真正去画。布局相当于导演手里的剧本，规定了如何演，但并没有真正开始演戏呢，绘制的时候，我们的演员才上场。
+
+3-匿名函数的大量使用。
+</code></pre></div></div>
+
+<p>#### 1.直方图 
+  同样从直方图开始，不同的是，D3可以批量绑定数据。
+<img src="https://img-blog.csdnimg.cn/20210528023124531.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA2MTE3MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">var</span> <span class="n">dataset</span><span class="o">=</span><span class="p">[</span><span class="mi">301</span><span class="p">.</span><span class="mi">37</span><span class="p">,</span><span class="mi">548</span><span class="p">.</span><span class="mi">63</span><span class="p">,</span><span class="mi">612</span><span class="p">.</span><span class="mi">4</span><span class="p">,</span><span class="mi">494</span><span class="p">.</span><span class="mi">7</span><span class="p">,</span><span class="mi">419</span><span class="p">.</span><span class="mi">6</span><span class="p">,</span><span class="mi">434</span><span class="p">.</span><span class="mi">9</span><span class="p">,</span><span class="mi">372</span><span class="p">.</span><span class="mi">8</span><span class="p">,</span><span class="mi">513</span><span class="p">.</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">var</span> <span class="n">dataset2</span><span class="o">=</span> <span class="n">new</span> <span class="n">Array</span><span class="p">(</span><span class="n">dataset</span><span class="p">.</span><span class="n">length</span><span class="p">)</span>
+<span class="n">var</span> <span class="n">tex</span><span class="o">=</span><span class="p">[</span><span class="s">"3.24"</span><span class="p">,</span><span class="s">"3.25"</span><span class="p">,</span><span class="s">"3.26"</span><span class="p">,</span><span class="s">"3.27"</span><span class="p">,</span><span class="s">"3.28"</span><span class="p">,</span><span class="s">"3.29"</span><span class="p">,</span><span class="s">"3.30"</span><span class="p">,</span><span class="s">"3.31"</span><span class="p">]</span>
+<span class="k">for</span> <span class="p">(</span><span class="n">var</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">dataset</span><span class="p">.</span><span class="n">length</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="n">dataset2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">dataset</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">/</span><span class="mi">4</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="n">var</span> <span class="n">svg</span><span class="o">=</span><span class="n">d3</span><span class="p">.</span><span class="n">select</span><span class="p">(</span><span class="s">"body"</span><span class="p">)</span>
+			<span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">"svg"</span><span class="p">)</span>
+			<span class="p">.</span><span class="n">attr</span><span class="p">(</span><span class="s">"width"</span><span class="p">,</span><span class="n">w</span><span class="p">)</span>
+			<span class="p">.</span><span class="n">attr</span><span class="p">(</span><span class="s">"height"</span><span class="p">,</span><span class="n">h</span><span class="p">);</span>
+<span class="n">svg</span><span class="p">.</span><span class="n">selectAll</span><span class="p">(</span><span class="s">"rect"</span><span class="p">)</span>
+	<span class="p">.</span><span class="n">data</span><span class="p">(</span><span class="n">dataset2</span><span class="p">)</span>
+	<span class="p">.</span><span class="n">enter</span><span class="p">()</span>
+	<span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">"rect"</span><span class="p">)</span>
+	<span class="p">.</span><span class="n">attr</span><span class="p">(</span><span class="s">"x"</span><span class="p">,</span><span class="n">function</span><span class="p">(</span><span class="n">d</span><span class="p">,</span><span class="n">i</span><span class="p">)</span>
+	<span class="p">{</span><span class="k">return</span> <span class="mi">50</span><span class="o">+</span><span class="n">i</span><span class="o">*</span><span class="p">(</span><span class="n">w</span><span class="o">/</span><span class="n">dataset</span><span class="p">.</span><span class="n">length</span><span class="p">)</span><span class="o">*</span><span class="mi">0</span><span class="p">.</span><span class="mi">8</span><span class="p">;})</span>
+	<span class="p">.</span><span class="n">attr</span><span class="p">(</span><span class="s">"y"</span><span class="p">,</span><span class="n">function</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+	<span class="p">{</span><span class="k">return</span> <span class="n">h</span><span class="o">-</span><span class="n">d</span><span class="o">*</span><span class="mi">3</span><span class="o">-</span><span class="mi">20</span><span class="p">;})</span>
+	<span class="c1">//.attr("fill",function(d,i){return color(i);})</span>
+	<span class="c1">//.attr("fill",function(d,i){return rgb(10,10,d*100)})</span>
+	<span class="p">.</span><span class="n">attr</span><span class="p">(</span><span class="s">"width"</span><span class="p">,(</span><span class="n">w</span><span class="o">/</span><span class="n">dataset</span><span class="p">.</span><span class="n">length</span><span class="o">*</span><span class="mi">0</span><span class="p">.</span><span class="mi">8</span><span class="o">-</span><span class="mi">10</span><span class="p">))</span>
+	<span class="p">.</span><span class="n">attr</span><span class="p">(</span><span class="s">"height"</span><span class="p">,</span><span class="n">function</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+	<span class="p">{</span><span class="k">return</span> <span class="n">d</span><span class="o">*</span><span class="mi">3</span><span class="p">;})</span>
+	<span class="p">.</span><span class="n">attr</span><span class="p">(</span><span class="s">"fill"</span><span class="p">,</span><span class="n">function</span><span class="p">(</span><span class="n">d</span><span class="p">){</span><span class="k">return</span> <span class="s">"rgb(150,200,"</span><span class="o">+</span><span class="p">(</span><span class="n">d</span><span class="o">*</span><span class="mi">1</span><span class="p">.</span><span class="mi">2</span><span class="p">)</span><span class="o">+</span><span class="s">")"</span><span class="p">});</span>
+<span class="n">svg</span><span class="p">.</span><span class="n">selectAll</span><span class="p">(</span><span class="s">"text.value"</span><span class="p">)</span>
+			<span class="p">.</span><span class="n">data</span><span class="p">(</span><span class="n">dataset</span><span class="p">)</span>
+			<span class="p">.</span><span class="n">enter</span><span class="p">()</span>
+			<span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">"text"</span><span class="p">)</span>
+			<span class="p">.</span><span class="n">attr</span><span class="p">(</span><span class="s">"fill"</span><span class="p">,</span><span class="n">function</span><span class="p">(</span><span class="n">d</span><span class="p">){</span><span class="k">return</span> <span class="s">"rgb(200,200,100)"</span><span class="p">})</span>
+			<span class="p">.</span><span class="n">attr</span><span class="p">(</span><span class="s">"font-size"</span><span class="p">,</span><span class="s">"15px"</span><span class="p">)</span>
+			<span class="p">.</span><span class="n">attr</span><span class="p">(</span><span class="s">"text-anchor"</span><span class="p">,</span><span class="s">"middle"</span><span class="p">)</span>
+			<span class="p">.</span><span class="n">attr</span><span class="p">(</span><span class="s">"x"</span><span class="p">,</span><span class="n">function</span><span class="p">(</span><span class="n">d</span><span class="p">,</span><span class="n">i</span><span class="p">){</span><span class="k">return</span> <span class="mi">30</span><span class="o">+</span><span class="n">i</span><span class="o">*</span><span class="p">(</span><span class="n">w</span><span class="o">/</span><span class="n">dataset</span><span class="p">.</span><span class="n">length</span><span class="p">)</span><span class="o">*</span><span class="mi">0</span><span class="p">.</span><span class="mi">8</span><span class="p">})</span>
+			<span class="p">.</span><span class="n">attr</span><span class="p">(</span><span class="s">"y"</span><span class="p">,</span><span class="n">function</span><span class="p">(</span><span class="n">d</span><span class="p">){</span><span class="k">return</span> <span class="n">h</span><span class="o">-</span><span class="n">d</span><span class="o">*</span><span class="mi">0</span><span class="p">.</span><span class="mi">75</span><span class="o">-</span><span class="mi">30</span><span class="p">;})</span>
+			<span class="p">.</span><span class="n">attr</span><span class="p">(</span><span class="s">"dx"</span><span class="p">,(</span><span class="n">w</span><span class="o">/</span><span class="n">dataset</span><span class="p">.</span><span class="n">length</span><span class="o">-</span><span class="mi">10</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+			<span class="p">.</span><span class="n">attr</span><span class="p">(</span><span class="s">"dy"</span><span class="p">,</span><span class="s">"lem"</span><span class="p">)</span>
+            <span class="p">.</span><span class="n">text</span><span class="p">(</span><span class="n">function</span><span class="p">(</span><span class="n">d</span><span class="p">){</span><span class="k">return</span> <span class="n">d</span><span class="p">;})</span>
+<span class="n">svg</span><span class="p">.</span><span class="n">selectAll</span><span class="p">(</span><span class="s">"text.date"</span><span class="p">)</span>
+			<span class="p">.</span><span class="n">data</span><span class="p">(</span><span class="n">tex</span><span class="p">)</span>
+			<span class="p">.</span><span class="n">enter</span><span class="p">()</span>
+			<span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">"text"</span><span class="p">)</span>
+			<span class="p">.</span><span class="n">attr</span><span class="p">(</span><span class="s">"fill"</span><span class="p">,</span><span class="s">"black"</span><span class="p">)</span>
+			<span class="p">.</span><span class="n">attr</span><span class="p">(</span><span class="s">"font-size"</span><span class="p">,</span><span class="s">"20px"</span><span class="p">)</span>
+			<span class="p">.</span><span class="n">attr</span><span class="p">(</span><span class="s">"text-anchor"</span><span class="p">,</span><span class="s">"middle"</span><span class="p">)</span>
+			<span class="p">.</span><span class="n">attr</span><span class="p">(</span><span class="s">"x"</span><span class="p">,</span><span class="n">function</span><span class="p">(</span><span class="n">d</span><span class="p">,</span><span class="n">i</span><span class="p">){</span><span class="k">return</span> <span class="mi">30</span><span class="o">+</span><span class="n">i</span><span class="o">*</span><span class="p">(</span><span class="n">w</span><span class="o">/</span><span class="n">dataset</span><span class="p">.</span><span class="n">length</span><span class="p">)</span><span class="o">*</span><span class="mi">0</span><span class="p">.</span><span class="mi">8</span><span class="p">})</span>
+			<span class="p">.</span><span class="n">attr</span><span class="p">(</span><span class="s">"y"</span><span class="p">,</span><span class="n">function</span><span class="p">(</span><span class="n">d</span><span class="p">){</span><span class="k">return</span> <span class="n">h</span><span class="p">;})</span>
+			<span class="p">.</span><span class="n">attr</span><span class="p">(</span><span class="s">"dx"</span><span class="p">,(</span><span class="n">w</span><span class="o">/</span><span class="n">dataset</span><span class="p">.</span><span class="n">length</span><span class="o">-</span><span class="mi">10</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+			<span class="p">.</span><span class="n">attr</span><span class="p">(</span><span class="s">"dy"</span><span class="p">,</span><span class="s">"lem"</span><span class="p">)</span>
+			<span class="p">.</span><span class="n">attr</span><span class="p">(</span><span class="s">"font-family"</span><span class="p">,</span><span class="s">"Microsoft Yahei"</span><span class="p">)</span>
+            <span class="p">.</span><span class="n">text</span><span class="p">(</span><span class="n">function</span><span class="p">(</span><span class="n">d</span><span class="p">){</span><span class="k">return</span> <span class="p">(</span><span class="n">d</span><span class="p">);})</span>
+</code></pre></div></div>
+<h4 id="2饼图">2.饼图</h4>
+<p>与数据库技术结合，引进了图例，有了交互性，链接导向下一个页面。
+<img src="https://img-blog.csdnimg.cn/20210528023531376.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA2MTE3MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
+<h4 id="3力导向图">3.力导向图</h4>
+<p>嵌入了背景图片，有了更多的设计感。
+<img src="https://img-blog.csdnimg.cn/20210528023843895.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDA2MTE3MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" />
+在每次作业中，老师不再不断的提建议，从选题到数据，再到设计。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>选题：立足点要高，放眼全国和世界，要做有意义和影响力的作品。
+
+数据要求有三个原则 ：
+
+1-最新。近期数据。或者实时数据。
+
+2-完整。整年的数据。连续N年的数据。
+
+3-权威。国家权威官方数据，国家统计局数据、重要学术机构数据，部委数据、国内外知名咨询公司数据，重要文献数据等。
+
+设计：标题要醒目，要将平时学到东西融会贯通，要注意色彩搭配。
+</code></pre></div></div>
+
+<p>未完待续…</p>
+
+<p>参考资料：http://cuc.yingshinet.com/</p>
+
+
+
+<div class="post-categories">
+  Categories :
+  
+  
+      <a href="http://localhost:4000/categories/#course">course</a>
+  &nbsp;
+  
+      <a href="http://localhost:4000/categories/#Option">Option</a>
+  
+  
+</div>
+
+
+  <hr>
+  
+  
+  
+
+
+    </main>
+</div>
+
+    </body>
+</html>
