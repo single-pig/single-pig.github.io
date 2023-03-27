@@ -1,6 +1,6 @@
 ---
 layout: home
-home_text: Hey, let's explore together! My lover.
+home_text: Hey, nice to meet you!
 title: Single pig
 ---
 
